@@ -10,6 +10,10 @@
 
         <div class="container mx-auto">
             <div class="flex flex-col text-white px-4 md:px-0">
+                <div class="flex place-self-end space-x-3">
+                    <span v-if="user" @click="editPost" class="px-2 py-1 bg-foreground text-white hover:text-accent w-fit text-2xl hover:cursor-pointer -mt-5">Edit</span>
+                    <span v-if="user" @click="deletePost" class="px-2 py-1 bg-foreground text-white hover:text-accent w-fit text-2xl hover:cursor-pointer -mt-5">Delete</span>
+                </div>
                 <p v-html="markdown" class="markdown-content bg-foreground p-5 rounded-md my-2"></p>
                 <div class="flex text-muted place-content-between">
                     <span>Created: {{ blog.createdAt }}</span>
@@ -43,7 +47,8 @@ export default {
     },
 
     computed: {
-        markdown() { return this.blog.body ? md.render(this.blog.body) : '' }
+        markdown() { return this.blog.body ? md.render(this.blog.body) : '' },
+        user() { return this.$store.getters.user; }
     },
 
     async mounted() {
@@ -51,6 +56,17 @@ export default {
         if(this.blog.status === 404) return this.$router.push('/404');
         this.blog.createdAt = new Date(this.blog.createdAt).toDateString();
     },
+
+    methods: {
+        async deletePost() {
+            const response = await blogService.blogDelete(this.blog.id);
+            if(response.status === 200) this.$router.push('/blog');
+        },
+        async editPost() {
+            this.$router.push(`/blog/${this.blog.id}/edit`);
+        }
+
+    }
 
 }
 </script>

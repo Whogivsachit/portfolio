@@ -28,6 +28,12 @@ const router = createRouter({
       component: () => import('../views/blogView.vue'),
     },
     {
+      path: '/blog/:id/edit',
+      name: 'blogEdit',
+      component: () => import('../views/blogEdit.vue'),
+      meta: { requiresAuth: true }
+    },
+    {
       path: '/dashboard',
       name: 'dashboard',
       component: () => import('../views/dashboardPage.vue'),

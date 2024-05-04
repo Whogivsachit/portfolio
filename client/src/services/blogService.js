@@ -20,5 +20,15 @@ export default {
     async blogCreate(post) {
         return Api().post('blog/create', post)
         .then(response => response.data)
+    },
+
+    async blogDelete(id) {
+        return Api().delete(`blog/${id}`)
+        .then(response => response.data)
+    },
+
+    async blogEdit(id, post) {
+        return Api().put(`blog/${id}`, post)
+        .then(response => response.data)
     }
 }

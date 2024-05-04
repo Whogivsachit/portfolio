@@ -4,6 +4,9 @@ export default {
     async blogs() {
         return Api().get(`blogs`)
         .then(response => response.data)
+        .catch(error => {
+            return { error: 'No blogs found', status: error.response.status}
+        });
     },
 
     async blog(id) {

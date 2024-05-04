@@ -9,6 +9,7 @@
 
         <div class="container mx-auto w-full md:w-1/2 px-4 md:px-0">
             <div class="flex flex-col gap-4">
+                <div class="text-white bg-foreground p-5 rounded-md text-center w-fit mx-auto" v-html="error" v-if="error"></div>
                 <router-link to="/blog/create" v-if="user" class="px-2 py-1 bg-foreground text-white w-fit place-self-end text-2xl rounded-md drop-shadow-md hover:text-accent cursor-pointer">Create</router-link>
                 <router-link :to='`/blog/${post.id}`' class="transition ease-in-out duration-700 hover:scale-105" v-for="post in posts" :key="post.id"> 
                     <div class="bg-foreground rounded-md p-5 w-full text-white">
@@ -37,7 +38,8 @@ export default {
     },
     data() {
         return {
-            posts: []
+            posts: [],
+            error: ''
         }
     },
 
@@ -46,7 +48,9 @@ export default {
     },
 
     async mounted() {
-        this.posts = await blogService.blogs();
+        const blogs = await blogService.blogs();
+        blogs.error ? this.error = blogs.error : this.posts = blogs;
+
         this.posts.forEach(post => {
             post.createdAt = new Date(post.createdAt).toDateString();
         })

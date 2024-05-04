@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "title": "SimplyAnime",
+        "description": "SimplyAnime is a website that allows you to watch anime without any popups, ads, or any other bullshit. We aim to provide a simple and easy to use platform for watching anime.",
+        "stack": "NodeJs, Express, Vue.js, TailwindCss, WebTorrent, Sequelize (mysql)",
+        "link": "https://github.com/Whogivsachit/simplyAnime",
+        "time": "Jan 2024 - Present"
+    },
+    {
+        "id": "2",
+        "title": "AdvinMulti",
+        "description": "AdvinMulti is a sleek and efficient Discord bot developed using discord.js. This bot provides real-time stock updates and notifications to users. Stay informed about stock changes effortlessly right in your discord server.",
+        "stack": "NodeJs, Sequelize (Mysql)",
+        "link": "https://github.com/Whogivsachit/advinMulti",
+        "time": "Aug 2023 - Apr 2024"
+    },
+    {
+        "id": "3",
+        "title": "ChitterEngine",
+        "description": "The very first Discord Bot I ever made, ChitterEngine is a simple and efficient Discord bot developed using discord.js. It features a variety of commands including moderation, fun, and more.",
+        "stack": "Discord.js, Node.js, Enmap",
+        "link": "https://github.com/Whogivsachit/ChitterEngine-DiscordBot",
+        "time": "Jan 2020 - Jan 2021"
+    },
+    {
+        "id": "4",
+        "title": "Pterodactyl Dark Transparency",
+        "description": "PDT is a beautiful dark transparent theme for the most popular game hosting panel Pterodactyl. It features a dark transparent design with a modern look and feel.",
+        "stack": "CSS",
+        "link": "https://github.com/Whogivsachit/Pterodactyl-Clean-Minecraft-Theme",
+        "time": "May 2020"
+    },
+    {
+        "id": "5",
+        "title": "Simple Gameserver Homepage",
+        "description": "A beautiful yet simple homepage for your Game Servers. It features a modern design with a server status checker, player count, and more.",
+        "stack": "Javascript, Tailwindcss",
+        "link": "https://github.com/Whogivsachit/Simple-Gameserver-Homepage",
+        "time": "Jul 2023"
+    },
+    {
+        "id": "6",
+        "title": "Personal Multiuse Api",
+        "description": "A personal multiuse API that I use for various projects. It includes endpoints for fetching anime data, stock data, and more.",
+        "stack": "NodeJs, Express, Sequelize (mysql), JWT",
+        "link": "https://github.com/Whogivsachit/personal-multiuse-api",
+        "time": "Nov 2023 - Present"
+    },
+    {
+        "id": "7",
+        "title": "Portfolio",
+        "description": "The site your currently viewing. Its a portfolio to showcase some of my Projects, Skills and Information.",
+        "stack": "NodeJs, Express, Vue.js, TailwindCss",
+        "link": "https://github.com/Whogivsachit/portfolio",
+        "time": "??? ???? - Present"
+    }
+]

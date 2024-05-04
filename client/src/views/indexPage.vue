@@ -34,7 +34,7 @@
                 <div class="flex flex-col md:flex-row pt-2 gap-2">
                     <div class="p-5 bg-background rounded-md border-accent text-2xl space-x-2 w-full md:w-1/4">
                         <faIcon :icon="[ 'fab', 'discord' ]" />
-                        <a href="https://discord.gg/#" class="hover:text-accent underline">Whogi</a>
+                        <a href="https://discordapp.com/users/202967961298927616" class="hover:text-accent underline">Whogi</a>
                     </div>
                     <div class="p-5 bg-background rounded-md border-accent text-2xl space-x-2 w-full md:w-1/4">
                         <faIcon :icon="[ 'fab', 'github' ]" />
@@ -46,7 +46,7 @@
                     </div>
                     <div class="p-5 bg-background rounded-md border-accent text-2xl space-x-2 w-full md:w-1/4">
                         <faIcon :icon="[ 'fab', 'steam' ]" />
-                        <a href="mailto:contact@chit.sh" class="hover:text-accent underline">Whogi</a>
+                        <a href="https://steamcommunity.com/id/Whogi" class="hover:text-accent underline">Whogi</a>
                     </div>
                 </div>
             </div>

@@ -83,8 +83,7 @@
                             <h1 class="font-bold text-2xl hover:text-accent"><a :href="experience.link">{{ experience.title }}</a></h1>
                         </div>
                         <h2 class="text-muted">{{ experience.time }}</h2>
-                        <p class="py-2">{{ experience.description }}</p>
-                        <span class="text-muted">My Role: {{ experience.roleDescription }}</span>
+                        <span class="text-white">{{ experience.description }}</span>
                     </div>
                 </div>
             </div>

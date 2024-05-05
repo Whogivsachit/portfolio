@@ -4,15 +4,13 @@
         "title": "Cloudnoden",
         "time": "System Administrator | Nov 2023 - Jan 2024",
         "link": "https://cloudnoden.net",
-        "description": "Cloudnoden is a free hosting company passionate about offering free hosting to friends and family.",
-        "roleDescription": "I was responsible for the maintenance and management of servers and networking, including Pterodactyl, WHMCS, Virtfusion, Proxmox, PBS, and more.."
+        "description": "I played a pivotal role in the upkeep and management of servers and networking infrastructure, overseeing a range of critical systems including Pterodactyl, WHMCS, Virtfusion, Proxmox, PBS, and other essential components."
     },
     {
         "id": "2",
         "title": "Frohost",
         "time": "System Administrator & Support | Nov 2018 - May 2019",
         "link": "https://frohost.net",
-        "description": "Frohost was a small hosting company with about 600 members. They were passionate about offering the most affordable game & web hosting available.",
-        "roleDescription": "I oversaw the Support Team and spearheaded the development of several systems to enhance user experience. This included creating a comprehensive Pterodactyl theme and implementing a custom ticketing system."
+        "description": "I oversaw the Support Team and spearheaded the development of several systems to enhance user experience. This included creating a comprehensive Pterodactyl theme and implementing a custom ticketing system."
     }
 ]

@@ -28,9 +28,8 @@ module.exports = (sequelize, dataTypes) => {
     }
 
     User.prototype.signJwt = function (user) {
-        const ONE_WEEK = 60 * 60 * 24 * 7;
         return jwt.sign(user, process.env.JWTSECRET, {
-            expiresIn: ONE_WEEK
+            expiresIn: '2h',
         })
     }
 

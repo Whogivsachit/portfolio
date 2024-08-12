@@ -54,5 +54,13 @@
         "stack": "NodeJs, Express, Vue.js, TailwindCss",
         "link": "https://github.com/Whogivsachit/portfolio",
         "time": "??? ???? - Present"
+    },
+    {
+        "id": "8",
+        "title": "ChitShtools",
+        "description": "ChitShTools is your go-to hub for a diverse collection of practical tools and scripts designed to simplify everyday tasks. Frustrated by the need to search for and utilize multiple websites for various utilities, I created ChitShTools to provide a comprehensive solution.",
+        "stack": "NodeJs, Express, Vue.js, TailwindCss, Sequelize (mysql)",
+        "link": "https://github.com/Whogivsachit/ChitShTools",
+        "time": "Jul 2024 - Present"
     }
 ]

@@ -1,5 +1,28 @@
 [
     {
+        "name": "HydraManga",
+        "link": "https://hydramanga.com",
+        "color": "#F23131",
+        "date": "Jan 2026 - Ongoing",
+        "description": "HydraManga is a modern, user-friendly platform for manga lovers. The app offers a seamless experience for discovering new manga, tracking reading progress, and managing personal collections. With a clean and intuitive interface, automatic chapter importing and metadata fetching, and a robust library management system.",
+        "pills": ["HTML/CSS", "React (Next.js)", "Tailwind CSS", "TypeScript", "DrizzleORM", "Websockets", "Redis", "NodeJs (Express)"],
+        "images": [
+            {
+                "src": "/images/projects/manga/manga-home.jpg",
+                "alt": "Manga Index"
+            },
+            {
+                "src": "/images/projects/manga/manga-profile.png",
+                "alt": "Manga History"
+            },
+            {
+                "src": "/images/projects/manga/manga-read.png",
+                "alt": "Manga Read"
+            }
+        ]
+
+    },
+    {
         "name": "AllTheJars",
         "link": "https://github.com/WhogiTheRaccoon/AllTheJars",
         "color": "#18982B",

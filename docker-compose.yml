@@ -7,6 +7,4 @@ services:
       - "80:3000"
     environment:
       - NODE_ENV=production
-    volumes:
-      - .:/app
     restart: unless-stopped

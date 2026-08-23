@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Script from "next/script";
 import "@/styles/globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -40,6 +41,11 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
           {children}
         </main>
         <Footer />
+        <Script
+          src="https://tracking.chit.sh/api/script.js"
+          data-site-id="6aa852180be4"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

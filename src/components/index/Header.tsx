@@ -15,22 +15,22 @@ export default function Header() {
             <h2 className="text-xl pt-2 text-muted">I'm a second-year computer science student and freelance web developer with a passion for coding,<br/> system administration, and raccoons. I love building clean, functional web experiences and constantly learning new<br/> things along the way.</h2>
         
             {/* Social media */}
-            <div className="flex flex-col md:flex-row place-content-evenly w-full md:w-1/2 pt-5 space-y-3 md:space-y-0 items-center">
-                <div className="text-2xl space-x-2 flex items-center">
-                    <Icon icon="bxl:discord-alt" className="size-9" />
+            <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-4 w-full max-w-4xl pt-5 px-4">
+                <div className="flex items-center gap-2 text-xl lg:text-2xl shrink-0">
+                    <Icon icon="bxl:discord-alt" className="size-9 shrink-0" />
                     <a href="https://discordapp.com/users/202967961298927616" className="hover:text-accent">Whogi</a>
                 </div>
 
-                <div className="text-2xl space-x-2 flex items-center">
-                    <Icon icon="bxl:github" className="size-9" />
+                <div className="flex items-center gap-2 text-xl lg:text-2xl shrink-0">
+                    <Icon icon="bxl:github" className="size-9 shrink-0" />
                     <a href="https://github.com/WhogiTheRaccoon" className="hover:text-accent">WhogiTheRaccoon</a>
                 </div>
-                <div className="text-2xl space-x-2 flex items-center">
-                    <Icon icon="ic:baseline-email" className="size-9" />
+                <div className="flex items-center gap-2 text-xl lg:text-2xl shrink-0">
+                    <Icon icon="ic:baseline-email" className="size-9 shrink-0" />
                     <a href="mailto:contact@chit.sh" className="hover:text-accent">whogi@chit.sh</a>
                 </div>
-                <div className="text-2xl space-x-2 flex items-center">
-                    <Icon icon="bxl:steam" className="size-9" />
+                <div className="flex items-center gap-2 text-xl lg:text-2xl shrink-0">
+                    <Icon icon="bxl:steam" className="size-9 shrink-0" />
                     <a href="https://steamcommunity.com/id/Whogi" className="hover:text-accent">Whogi</a>
                 </div>
             </div>

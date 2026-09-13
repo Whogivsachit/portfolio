@@ -29,7 +29,7 @@ export default function Navbar() {
             <div className="container mx-auto px-4 md:px-0">
                 <div className="flex flex-wrap items-center justify-between mx-auto">
 
-                    <Link href="/" className='flex items-center h-16 self-center text-3xl font-semibold text-white'>Whogi</Link>
+                    <Link href="/" className='flex items-center h-16 self-center text-3xl font-semibold text-primary'>Evan</Link>
 
                     <button onClick={toggleMobileMenu} id="dropdown" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
                         <span className="sr-only">Open main menu</span>
@@ -39,7 +39,7 @@ export default function Navbar() {
                     <div ref={menuRef} className={`${mobileMenuOpen ? '' : 'hidden'} w-full md:block md:w-auto text-xl z-10`} id="navbar-default">
                         <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-borders rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-foreground">
                             <NavLink href="/" onClick={closeMobileMenu}>Home</NavLink>
-                            <NavLink href="/blog" onClick={closeMobileMenu}>Blog</NavLink>
+                            {/* <NavLink href="/blog" onClick={closeMobileMenu}>Blog</NavLink> */}
                         </ul>
                     </div>
                 </div>

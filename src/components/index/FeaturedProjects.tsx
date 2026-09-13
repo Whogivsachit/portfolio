@@ -29,14 +29,14 @@ export default function FeaturedProjects() {
     }, [modalState.isOpen]);
 
     return (
-        <div className="container mx-auto text-white mb-12">
+        <div className="container mx-auto text-primary mb-12">
             <div className="flex flex-col md:flex-row pb-4 text-left place-content-between items-center">
-                <h1 className="text-4xl font-bold text-white">Featured Projects</h1>
+                <h1 className="text-4xl font-bold text-primary">Featured Projects</h1>
                 <a href="https://github.com/WhogiTheRaccoon?tab=repositories" className="text-2xl text-muted hover:text-accent flex items-center">See all projects <Icon icon="formkit:arrowright" className="size-8 pt-1" /></a>
             </div>
             <div className="flex flex-col gap-4">
                { visibleProjects.map((project) => (
-                    <Card key={project.name} className={`flex flex-row gap-6 border-b-4`} style={{ borderBottomColor: project.color }}>
+                    <Card key={project.name} className={`flex flex-row gap-6 shadow-md`}>
                         <div className="flex flex-col w-full md:w-1/3 space-y-1">
                             <a href={project.link || ''} className={` ${project.link ? 'hover:text-accent' : ''} text-3xl`} target="_blank" rel="noopener noreferrer">{project.name}</a>
                             <span className="text-muted text-sm flex items-center">{project.date}</span>
@@ -70,9 +70,9 @@ export default function FeaturedProjects() {
                     <div className="fixed inset-0 z-50 bg-background/95 flex items-center justify-center">
                         <div className="relative w-full px-4">
                             <div className="flex items-center justify-between">
-                            <button onClick={prevImage} className="text-white text-4xl px-4 hover:text-accent cursor-pointer"><Icon icon="weui:arrow-outlined" className="rotate-180" /></button>
+                            <button onClick={prevImage} className="text-primary text-4xl px-4 hover:text-accent cursor-pointer"><Icon icon="weui:arrow-outlined" className="rotate-180" /></button>
                             <Image src={modalState.images[modalState.index]?.src} alt={modalState.images[modalState.index]?.alt} width={1920} height={1080} className="max-h-[80vh] mx-auto rounded-lg object-contain"/>
-                            <button onClick={nextImage} className="text-white text-4xl px-4 hover:text-accent cursor-pointer"><Icon icon="weui:arrow-outlined" /></button>
+                            <button onClick={nextImage} className="text-primary text-4xl px-4 hover:text-accent cursor-pointer"><Icon icon="weui:arrow-outlined" /></button>
                             </div>
                         </div>
                     </div>

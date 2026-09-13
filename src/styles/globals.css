@@ -1,19 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-@theme {
-    --color-background: #17191C;
-    --color-foreground: #1D1F23;
-    --color-accent: #b3b3b3;
-    --color-borders: #3C3E45;
-    --color-muted: #9C9C9E;
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-primary: var(--primary);
+    --color-accent: var(--accent);
+    --color-borders: var(--borders);
+    --color-muted: var(--muted);
+}
+
+:root, [data-theme="light"] {
+    --background: #ffffff;
+    --foreground: #f4f4f5;
+    --primary: #000000;
+    --accent: #404040;
+    --borders: #d4d4d8;
+    --muted: #6b6b6e;
+    --scrollbar-thumb: #c4c4c8;
+    color-scheme: light;
+}
+
+[data-theme="dark"] {
+    --background: #17191C;
+    --foreground: #1D1F23;
+    --primary: #ffffff;
+    --accent: #b3b3b3;
+    --borders: #3C3E45;
+    --muted: #9C9C9E;
+    --scrollbar-thumb: #2C2E34;
+    color-scheme: dark;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 400ms;
+    animation-timing-function: ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+        animation: none;
+    }
 }
 
 * { 
-    font-family: "Lexend Deca", sans-serif; 
-    scrollbar-color: #2C2E34 var(--color-background);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    scrollbar-color: var(--scrollbar-thumb) var(--background);
     scrollbar-width: thin;
+}
+
+body {
+    color: var(--primary);
+    background-color: var(--background);
 }
 
 .no-scroll {
@@ -36,5 +79,5 @@
 }
 
 .anim-up {
-    @apply transition-all duration-300 hover:-translate-y-1.5;
+    @apply transition-transform duration-300 hover:-translate-y-1.5;
 }

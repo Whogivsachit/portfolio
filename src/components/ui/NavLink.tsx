@@ -13,6 +13,6 @@ export default function NavLink({href, children, className = '', ...props}: NavL
     const pathname = usePathname();
 
     return (
-        <Link href={href} className={`block py-2 pl-3 pr-4 rounded md:p-0 ${pathname === href ? 'text-white' : 'text-muted'}`} {...props}>{children}</Link>
+        <Link href={href} className={`block py-2 pl-3 pr-4 rounded md:p-0 ${pathname === href ? 'text-primary' : 'text-muted'}`} {...props}>{children}</Link>
     )
 }

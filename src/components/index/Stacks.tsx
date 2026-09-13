@@ -4,8 +4,8 @@ import technologies from '@/data/technologies.json';
 
 export default function Stacks() {
     return (
-        <div className="container mx-auto text-white mb-12">
-            <h1 className="text-4xl font-bold text-white text-left">Technologies</h1>
+        <div className="container mx-auto text-primary mb-12">
+            <h1 className="text-4xl font-bold text-primary text-left">Technologies</h1>
             <h2 className="text-lg text-muted pb-4 text-left">Over the years, I have worked with a variety of technologies. Here are some of the featured technologies I have experience with:</h2>
             
             <h1 className="text-muted text-2xl py-2">Backend</h1>

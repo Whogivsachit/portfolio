@@ -1,8 +1,8 @@
-import { Metadata } from "next";
 import Script from "next/script";
 import "@/styles/globals.css";
-import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ThemeProvider from "@/components/theme/ThemeProvider";
+import ThemeToggle from "@/components/theme/ThemeToggle";
 
 export const metadata = {
   title: "ChitSh - Portfolio",
@@ -32,15 +32,22 @@ export const metadata = {
   authors: [{ name: "Whogi" }],
 }
 
+const themeInitScript = `(function(){try{var t=localStorage.getItem('theme');if(t!=='dark'&&t!=='light')t='dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`;
+
 export default function RootLayout({children}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className="theme-default">
-      <body className="bg-background min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-1">
-          {children}
-        </main>
-        <Footer />
+    <html lang="en" data-theme="dark" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
+      <body className="bg-background text-primary min-h-screen flex flex-col">
+        <ThemeProvider>
+          <ThemeToggle />
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
+        </ThemeProvider>
         <Script
           src="https://tracking.chit.sh/api/script.js"
           data-site-id="6aa852180be4"

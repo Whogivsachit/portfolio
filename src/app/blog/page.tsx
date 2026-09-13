@@ -20,14 +20,14 @@ export default function Home() {
                 <div className="flex flex-col gap-2">
                     {!hasPosts && (
                         <div className="text-center">
-                            <h2 className="text-white text-4xl font-bold">No posts found</h2>
+                            <h2 className="text-primary text-4xl font-bold">No posts found</h2>
                             <p className="text-muted">Looks like I haven't written anything yet. Check back later!</p>
                         </div>
                     )}
 
                     {posts.map((post) => (
                         <Link href={`/blog/${post.id}`} key={post.id} className="bg-foreground rounded-lg p-4 mb-4 anim-up">
-                            <h2 className="text-white text-2xl font-bold">{post.title}</h2>
+                            <h2 className="text-primary text-2xl font-bold">{post.title}</h2>
                             <p className="text-muted">{post.description}</p>
                             <div className="flex flex-row flex-wrap gap-3 md:gap-6 text-muted pt-2">
                                 <span className="flex items-center gap-2"><Icon icon="mdi:calendar" />{post.date}</span>

@@ -1,7 +1,7 @@
 [
     {
         "name": "HydraManga",
-        "link": "https://hydramanga.com",
+        "link": "https://github.com/Evanm-Whogi/Hydramanga",
         "color": "#F23131",
         "date": "Jan 2026 - Ongoing",
         "description": "HydraManga is a modern, user-friendly platform for manga lovers. The app offers a seamless experience for discovering new manga, tracking reading progress, and managing personal collections. With a clean and intuitive interface, automatic chapter importing and metadata fetching, and a robust library management system.",
@@ -24,7 +24,7 @@
     },
     {
         "name": "AllTheJars",
-        "link": "https://github.com/WhogiTheRaccoon/AllTheJars",
+        "link": "https://github.com/Evanm-Whogi/AllTheJars",
         "color": "#18982B",
         "date": "November 2025",
         "description": "AllTheJars is your ultimate hub for Minecraft downloads, offering direct access to every official and modded Minecraft jar. Designed for both server owners and players, AllTheJars ensures authenticity, reliability, and convenience by providing files directly from their original sources, we never host files ourselves.",
@@ -46,7 +46,7 @@
     },
     {
         "name": "Luca Hosting Template",
-        "link": "https://github.com/WhogiTheRaccoon/LucaHostingTemplate",
+        "link": "https://github.com/Evanm-Whogi/LucaHostingTemplate",
         "color": "#0FBA6C",
         "date": "April 2025 - April 2025",
         "description": "LucaHostingTemplate is a clean and game focused starting point for building a hosting provider website. It's designed to be simple, responsive, and SEO-optimized, so you can quickly launch a professional hosting site.",
@@ -68,7 +68,7 @@
     },
     {
         "name": "ChitShtools",
-        "link": "https://github.com/WhogiTheRaccoon/ChitShTools",
+        "link": "https://github.com/Evanm-Whogi/ChitShTools",
         "color": "#FA4033",
         "date": "July 2024 - Oct 2024",
         "description": "ChitShTools is your go-to hub for a diverse collection of practical tools and scripts designed to simplify everyday tasks. Frustrated by the need to search for and utilize multiple websites for various utilities, I created ChitShTools to provide a comprehensive solution.",
@@ -111,7 +111,7 @@
     },
     {
         "name": "Bru Hosting Template",
-        "link": "https://github.com/WhogiTheRaccoon/BruHostingTemplate",
+        "link": "https://github.com/Evanm-Whogi/BruHostingTemplate",
         "color": "#6345f1",
         "date": "April 2025",
         "description": "BruHostingTemplate is a clean and professional starting point for building a hosting provider website. It’s designed to be simple, responsive, and SEO-optimized, so you can quickly launch a professional hosting site.",

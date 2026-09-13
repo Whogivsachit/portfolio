@@ -23,7 +23,7 @@ export default function Header() {
 
                 <div className="flex items-center gap-2 text-xl lg:text-2xl shrink-0">
                     <Icon icon="bxl:github" className="size-9 shrink-0" />
-                    <a href="https://github.com/WhogiTheRaccoon" className="hover:text-accent">WhogiTheRaccoon</a>
+                    <a href="https://github.com/Evanm-Whogi" className="hover:text-accent">Evanm-Whogi</a>
                 </div>
                 <div className="flex items-center gap-2 text-xl lg:text-2xl shrink-0">
                     <Icon icon="ic:baseline-email" className="size-9 shrink-0" />
